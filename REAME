@@ -1,0 +1,9 @@
+Apply watermark image
+
+Copyright 2011, Josemar Davi Luedke <josemarluedke@gmail.com>
+
+
+Use:
+$watermark = new Watermark();
+
+$watermark->apply('from.jpg', "to.jpg", 'watermark.png', 8);
