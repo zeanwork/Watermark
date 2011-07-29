@@ -5,7 +5,7 @@
  * Copyright 2011, Josemar Davi Luedke <josemarluedke@gmail.com>
  * 
  * Licenciado sob a licença MIT
- * Redistribuições do arquivos e/ou parte do códigos deve manter o aviso de copyright acima.
+ * Redistributions of part of code must retain the above copyright notice.
  * 
  * @author Josemar Davi Luedke <josemarluedke@gmail.com>
  * @version 0.1.0
