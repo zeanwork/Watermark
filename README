@@ -1,9 +1,31 @@
 Apply watermark image
 
+Licensed under the MIT license <http://www.opensource.org/licenses/mit-license.php>
 Copyright 2011, Josemar Davi Luedke <josemarluedke@gmail.com>
 
 
 Use:
+
+# Include watermark class
+require "../watermark.php";
+
+# Watermark class started
 $watermark = new Watermark();
 
-$watermark->apply('from.jpg', "to.jpg", 'watermark.png', 8);
+# Apply watermark
+$watermark->apply('from.jpg', 'to.jpg', 'watermark.png', 3);
+
+Parameters of method apply
+1: From image, original image
+2: Target image, image destination
+3: Watermark image
+4: Watermark position number
+ 		* 0: Centered
+		* 1: Top Left
+		* 2: Top Right
+		* 3: Footer Right
+		* 4: Footer left
+		* 5: Top Centered
+		* 6: Center Right
+		* 7: Footer Centered
+		* 8: Center Left
