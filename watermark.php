@@ -84,7 +84,7 @@ class Watermark {
 				return "imagepng";
 		}elseif(preg_match("/^(.*)\.(gif)$/", $name)){
 			if($action == "open")
-				return "imagecreatefromgit";
+				return "imagecreatefromgif";
 			else
 				return "imagegif";
 		}else{
