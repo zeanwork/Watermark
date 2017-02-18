@@ -201,7 +201,13 @@ class Watermark {
 		$functionTarget = $this->getFunction($imgTarget, 'save');
 
 		# Save image
-		$functionTarget($this->imgSource, $imgTarget, 100);
+		if(preg_match('/^(.*)\.(jpeg|jpg)$/', $imgTarget)){
+			$functionTarget($this->imgSource, $imgTarget, 100);
+		}elseif(preg_match('/^(.*)\.(png)$/', $imgTarget)){
+			$functionTarget($this->imgSource, $imgTarget, 0);
+		}elseif(preg_match('/^(.*)\.(gif)$/', $imgTarget)){
+			$functionTarget($this->imgSource, $imgTarget);
+		}
 
 		# Destroy temp images
 		imagedestroy($this->imgSource);
